@@ -4,9 +4,9 @@ export const CheckValidate = (email,password,name) =>{
     const isEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)
    
     
-    if(!isName || "") return `${name} is not Valid`
-    if(!isEmail || "") return "Email is not Valid"
-    if(!isPassword || "") return "Password is not Valid"
+    if(!isName) return "Name is not Valid"
+    if(!isEmail) return "Email is not Valid"
+    if(!isPassword) return "Password is not Valid"
 
     return null;
 }
